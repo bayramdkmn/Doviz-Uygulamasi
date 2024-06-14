@@ -26,9 +26,7 @@ function Currency() {
       <div className="baslik">
         <h3>DÖVİZ KURU UYGULAMASI</h3>
       </div>
-      <div
-        style={{ marginTop: "20px", justifyContent: "center", display: "flex" }}
-      >
+      <div className="ceviri-div">
         <input
           value={amount}
           onChange={(e) => setAmount(e.target.value)}
@@ -40,9 +38,7 @@ function Currency() {
           onChange={setFromCurrency}
           className="from-currency-option"
         />
-        <FaLongArrowAltRight
-          style={{ fontSize: "25px", marginRight: "10px" }}
-        />
+        <FaLongArrowAltRight className="arrow" />
         <CurrencySelect
           value={toCurrency}
           onChange={setToCurrency}
