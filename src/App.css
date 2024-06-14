@@ -1,0 +1,12 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-image: url(images/dolartl.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
