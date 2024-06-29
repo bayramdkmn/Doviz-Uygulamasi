@@ -29,10 +29,18 @@ function Currency() {
       <div className="ceviri-div">
         <input
           value={amount}
-          onChange={(e) => setAmount(e.target.value)}
+          onChange={(e) => {
+            const value = parseInt(e.target.value);
+            if (value >= 0) {
+              setAmount(value);
+            } else {
+              setAmount(0);
+            }
+          }}
           type="number"
           className="amount"
         />
+
         <CurrencySelect
           value={fromCurrency}
           onChange={setFromCurrency}
